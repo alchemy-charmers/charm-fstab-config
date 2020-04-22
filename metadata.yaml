@@ -1,13 +1,17 @@
 name: fstab-config
 summary: Apply configmap to fstab file
-maintainer: Pedro Guimaraes <pedro.guimaraes@canonical.com>
+maintainer: Chris Sanders <sanders.chris@gmail.com>
 description: |
   Apply config map to fstab file of host machine
 tags:
   - storage
-subordinate: false
+subordinate: true
 series:
   - xenial
   - bionic
   - disco
   - eoan
+requires:
+  juju-info:
+    interface: juju-info
+    scope: container

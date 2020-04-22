@@ -1,3 +1,6 @@
+This is a fork of https://launchpad.net/charm-fstab-config with the subordinate flag set to
+true for deployment as a subordinate charm.
+
 # fstab-config charm
 Allows users to expose configuration to be applied to /etc/fstab
 on Juju level.
